@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Management</title>
+</head>
+
+<body>
+
+<h1>Student Management</h1>
+
+<input id="rollNo" placeholder="Roll No">
+<input id="name" placeholder="Name">
+<input id="age" type="number" placeholder="Age">
+<input id="department" placeholder="Department">
+<input id="marks" type="number" placeholder="Marks">
+
+<button onclick="add()">Add</button>
+<button onclick="update()">Update</button>
+<button onclick="load()">Load</button>
+
+<h2>Students</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Department</th>
+            <th>Marks</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody id="data"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
