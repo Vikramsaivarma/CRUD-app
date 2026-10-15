@@ -202,5 +202,3 @@ function clear() {
 
     editId = null;
 }
-
-load();

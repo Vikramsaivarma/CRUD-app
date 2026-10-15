@@ -2,54 +2,39 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Student Management</title>
-    <link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
 
-<main class="container">
-    <h1>Student Management</h1>
+<h1>Student Management</h1>
 
-    <section class="form-container">
-        <h2>Student details</h2>
-        <input id="rollNo" placeholder="Roll No" aria-label="Roll No">
-        <input id="name" placeholder="Name" aria-label="Name">
-        <input id="age" type="number" placeholder="Age" aria-label="Age">
-        <input id="department" placeholder="Department" aria-label="Department">
-        <input id="marks" type="number" placeholder="Marks" aria-label="Marks">
+<input id="rollNo" placeholder="Roll No">
+<input id="name" placeholder="Name">
+<input id="age" type="number" placeholder="Age">
+<input id="department" placeholder="Department">
+<input id="marks" type="number" placeholder="Marks">
 
-        <div class="buttons">
-            <button id="submitBtn" type="button" onclick="add()">Add</button>
-            <button type="button" onclick="update()">Update</button>
-            <button class="cancel" type="button" onclick="clear()">Clear</button>
-        </div>
-    </section>
+<button onclick="add()">Add</button>
+<button onclick="update()">Update</button>
+<button onclick="load()">Load</button>
 
-    <section class="students-container">
-        <div class="header">
-            <h2>Students</h2>
-            <button type="button" onclick="load()">Refresh</button>
-        </div>
+<h2>Students</h2>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Roll No</th>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Department</th>
-                    <th>Marks</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Department</th>
+            <th>Marks</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
 
-            <tbody id="data"></tbody>
-        </table>
-    </section>
-</main>
+    <tbody id="data"></tbody>
+</table>
 
 <script src="/static/script.js"></script>
 

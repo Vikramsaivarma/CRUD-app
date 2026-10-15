@@ -131,7 +131,7 @@ class StudentApiTests(unittest.TestCase):
     def test_serves_frontend_and_assets(self):
         with self.client.get("/") as page:
             self.assertEqual(page.status_code, 200)
-            self.assertIn(b"/static/style.css", page.data)
+            self.assertIn(b"/static/script.js", page.data)
         with self.client.get("/static/style.css") as stylesheet:
             self.assertEqual(stylesheet.status_code, 200)
         with self.client.get("/static/script.js") as script:
